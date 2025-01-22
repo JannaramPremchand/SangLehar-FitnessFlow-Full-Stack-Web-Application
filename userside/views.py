@@ -205,7 +205,7 @@ def registerprocess(request):
         cur.execute("""
             INSERT INTO membership_master (User_Id, Plan_Id, Start_Date, End_Date, Amount, Details, Membership_Status) 
             VALUES (%s, %s, %s, %s, %s, %s, %s)
-        """, (u_id, planidd, s_date.strftime('%Y-%m-%d'), e_date.strftime('%Y-%m-%d'), planprice, plandetails,'Pending'))
+        """, (u_id, planidd, s_date.strftime('%Y-%m-%d'), e_date.strftime('%Y-%m-%d'), planprice, plandetails,'Not Approved'))
         
         m_id = cur.lastrowid
         conn.commit()
