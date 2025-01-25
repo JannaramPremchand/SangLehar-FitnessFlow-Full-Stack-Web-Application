@@ -284,6 +284,7 @@ def login(request):
 def logout(request):
     del request.session['user_id']
     del request.session['user_email']
+    request.session.flush()  # Clears all session data
     response = redirect(login)
     response.delete_cookie('user_id')
     response.delete_cookie('user_email')

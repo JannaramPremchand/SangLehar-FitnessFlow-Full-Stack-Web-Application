@@ -312,7 +312,7 @@
 
 
                 
-{% if user.is_authenticated %}
+{% if request.session.user_id %}
 <!-- Time Table Section -->
 <section class="timetable-section" style="background-image: url(static/User/images/background/2.jpg)">
 
