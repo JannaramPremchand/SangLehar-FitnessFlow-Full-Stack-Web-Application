@@ -2,8 +2,9 @@
 {% load static %}
 
 {% block mycontent %}
+
 <!-- Calculate Section Two -->
-<section class="calculate-section-two">
+{% comment %} <section class="calculate-section-two">
     <div class="auto-container">
         <div class="inner-container">
             <div class="pattern-layer" style="background-image:url(static/User/images/background/3.jpg)"></div>
@@ -71,7 +72,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> {% endcomment %}
 <!-- End Calculate Section Two -->
 
 <!-- Choose Section -->
@@ -83,14 +84,14 @@
             <div class="images-column col-lg-6 col-md-12 col-sm-12">
                 <div class="inner-column">
                     <div class="info-box">
-                        <h3><a href="#">Cardio <br> Training</a></h3>
-                        <a class="more" href="#">More <span class="arrow fa fa-arrow-circle-right"></span></a>
+                        <h3><a href="cardioForMan.html">Cardio <br> Training</a></h3>
+                        <a class="more" href="cardioForMan.html">More <span class="arrow fa fa-arrow-circle-right"></span></a>
                         <div class="icon flaticon-stationary-bike"></div>
                     </div>
                     
                     <div class="info-box style-two">
-                        <h3><a href="#">Fitness <br> Training</a></h3>
-                        <a class="more" href="#">More <span class="arrow fa fa-arrow-circle-right"></span></a>
+                        <h3><a href="fitnessForMan.html">Fitness <br> Training</a></h3>
+                        <a class="more" href="fitnessForMan.html">More <span class="arrow fa fa-arrow-circle-right"></span></a>
                         <div class="icon flaticon-people"></div>
                     </div>
                     
@@ -147,6 +148,96 @@
 </section>
 <!-- End Choose Section -->
 
+<!-- Service Section -->
+<section class="services-section">
+
+    <div class="side-text">GYM</div>
+
+    <div class="auto-container">
+
+        <div class="row clearfix">
+
+            
+
+            <!-- Service Block -->
+
+            <div class="service-block col-lg-4 col-md-6 col-sm-12">
+
+                <div class="inner-box">
+
+                    <div class="icon-box">
+
+                        <span class="icon flaticon-tools-and-utensils"></span>
+
+                    </div>
+
+                    <h4>Progression</h4>
+
+                    <div class="text">The point of using Lorem Ipsum is that it has pi motive re-or-less for normal distribution.</div>
+
+                    <span class="big-icon flaticon-tools-and-utensils"></span>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- Service Block -->
+
+            <div class="service-block style-two col-lg-4 col-md-6 col-sm-12">
+
+                <div class="inner-box">
+
+                    <div class="icon-box">
+
+                        <span class="icon flaticon-sports"></span>
+
+                    </div>
+
+                    <h4>Workout</h4>
+
+                    <div class="text">The point of using Lorem Ipsum is that it has pi motive re-or-less for normal distribution.</div>
+
+                    <span class="big-icon flaticon-sports"></span>
+
+                </div>
+
+            </div>
+
+            
+
+            <!-- Service Block -->
+
+            <div class="service-block style-three col-lg-4 col-md-6 col-sm-12">
+
+                <div class="inner-box">
+
+                    <div class="icon-box">
+
+                        <span class="icon flaticon-plan"></span>
+
+                    </div>
+
+                    <h4>Nutrition</h4>
+
+                    <div class="text">The point of using Lorem Ipsum is that it has pi motive re-or-less for normal distribution.</div>
+
+                    <span class="big-icon flaticon-plan"></span>
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+<!-- End Service Section -->
+
 <!-- Featured Section -->
 <section class="featured-section">
     <div class="auto-container">
@@ -161,16 +252,16 @@
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'classes-detail.html' %}"><img src="{% static 'User/images/resource/feature-1.jpg' %}" alt="" /></a>
+                        <a href="{% static 'psychoTraining.html' %}"><img src="{% static 'User/images/resource/feature-1.jpg' %}" alt="" /></a>
                         <div class="icon-box">
                             <span class="icon flaticon-tools-and-utensils-1"></span>
                         </div>
                     </div>
                     <div class="lower-content">
                         <div class="title">GYM</div>
-                        <h4><a href="{% static 'User/classes-detail.html' %}">Psycho Training</a></h4>
+                        <h4><a href="{% static 'psychoTraining.html' %}">Psycho Training</a></h4>
                         <div class="text">Winning means you’re willing to go longer, work harder for more.</div>
-                        <a class="read-more" href="{% static 'User/classes-detail.html' %}">Read More</a>
+                        <a class="read-more" href="{% static 'psychoTraining.html' %}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -179,16 +270,16 @@
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'User/classes-detail.html' %}"><img src="{% static 'User/images/resource/feature-2.jpg' %}" alt="" /></a>
+                        <a href="{% static 'selfDefence.html' %}"><img src="{% static 'User/images/resource/feature-2.jpg' %}" alt="" /></a>
                         <div class="icon-box">
                             <span class="icon flaticon-muscle"></span>
                         </div>
                     </div>
                     <div class="lower-content">
                         <div class="title">CARDIO</div>
-                        <h4><a href="{% static 'User/classes-detail.html' %}">Self Defence</a></h4>
+                        <h4><a href="{% static 'selfDefence.html' %}">Self Defence</a></h4>
                         <div class="text">Don’t practice until you get it right practice until can’t wrong</div>
-                        <a class="read-more" href="{% static 'User/classes-detail.html' %}">Read More</a>
+                        <a class="read-more" href="{% static 'selfDefence.html' %}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -197,16 +288,16 @@
             <div class="featured-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'User/classes-detail.html' %}"><img src="{% static 'User/images/resource/feature-3.jpg' %}" alt="" /></a>
+                        <a href="{% static 'fitnessForMan.html' %}"><img src="{% static 'User/images/resource/feature-3.jpg' %}" alt="" /></a>
                         <div class="icon-box">
                             <span class="icon flaticon-people"></span>
                         </div>
                     </div>
                     <div class="lower-content">
                         <div class="title">Fitness</div>
-                        <h4><a href="{% static 'User/classes-detail.html' %}">FITNESS FOR MAN</a></h4>
+                        <h4><a href="{% static 'fitnessForMan.html' %}">FITNESS FOR MAN</a></h4>
                         <div class="text">Winning means you’re willing to go longer, work harder for more.</div>
-                        <a class="read-more" href="{% static 'User/classes-detail.html' %}">Read More</a>
+                        <a class="read-more" href="{% static 'fitnessForMan.html' %}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +312,2135 @@
 
 
                 
+{% if user.is_authenticated %}
+<!-- Time Table Section -->
+<section class="timetable-section" style="background-image: url(static/User/images/background/2.jpg)">
+
+    <div class="side-text">Trainer</div>
+
+    <div class="auto-container">
+
+        <!-- Sec Title -->
+
+        <div class="sec-title light centered">
+
+            <div class="title">Time Table</div>
+
+            <h2>Working housr <br> &amp; Classes</h2>
+
+        </div>
+
+        
+
+        <div class="inner-container">
+
+            <div class="table-outer">
+
+                <div class="table-inner">
+
+                    <!-- Table Title Box -->
+
+                    <div class="table-title-box clearfix">
+
+                        <div class="title">ALL EVENTS</div>
+
+                        <div class="day">MONDAY</div>
+
+                        <div class="day">TUESDAY</div>
+
+                        <div class="day">WEDNESDAY</div>
+
+                        <div class="day">THURSDAY</div>
+
+                        <div class="day">FRIDAY</div>
+
+                        <div class="day">SATURDAY</div>
+
+                        <div class="day">SUNDAY</div>
+
+                    </div>
+
+                    <!-- Timetable Tabs-->
+
+                    <div class="timetable-tabs tabs-box">
+
+                        
+
+                        <!--Tab Btns-->
+
+                        <ul class="tab-btns tab-buttons clearfix">
+
+                            <li data-tab="#prod-cardio" class="tab-btn active-btn">CARDIO</li>
+
+                            <li data-tab="#prod-crossfit" class="tab-btn">CROSSFIT</li>
+
+                            <li data-tab="#prod-gym" class="tab-btn">GYM</li>
+
+                            <li data-tab="#prod-powerlifting" class="tab-btn">POWERLIFTING</li>
+
+                        </ul>
+
                 
+
+                        <!--Tabs Container-->
+
+                        <div class="tabs-content">
+
+                        
+
+                            <!--Tab / Active Tab-->
+
+                            <div class="tab active-tab" id="prod-cardio">
+
+                                <div class="content">
+
+                                    <div class="clearfix">
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <!--Tab-->
+
+                            <div class="tab" id="prod-crossfit">
+
+                                <div class="content">
+
+                                    <div class="clearfix">
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <!--Tab-->
+
+                            <div class="tab" id="prod-gym">
+
+                                <div class="content">
+
+                                    <div class="clearfix">
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                            <!--Tab-->
+
+                            <div class="tab" id="prod-powerlifting">
+
+                                <div class="content">
+
+                                    <div class="clearfix">
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Cardio Burn <span>MAdona FRON <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Crossfit Class <span>Madison fren <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">Power Lifting <span>Steve Cross <br> 11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                <div class="time">GYM OPEN <span>11:00  -  12:00</span></div>
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                        <!-- Time Box -->
+
+                                        <div class="time-box">
+
+                                            <div class="box-inner">
+
+                                                
+
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                        </div>
+
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+</section>
+<!-- End Time Table Section -->               
+
+{% else %}
+
 <!-- Pricing Section -->
 <section class="pricing-section">
     <div class="image-layer" style="background-image:url(static/User/images/background/2.jpg)"></div>
@@ -245,7 +2464,7 @@
                         <li>Weight Loss</li>
                         <li>Personal Trainer</li>
                     </ul>
-                    <div class="btn-one-outer"><a href="#" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
+                    <div class="btn-one-outer"><a href="register.html" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
                 </div>
             </div>
             
@@ -261,7 +2480,7 @@
                         <li>Weight Loss</li>
                         <li>Personal Trainer</li>
                     </ul>
-                    <div class="btn-one-outer"><a href="#" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
+                    <div class="btn-one-outer"><a href="register.html" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
                 </div>
             </div>
             
@@ -277,7 +2496,7 @@
                         <li>Weight Loss</li>
                         <li>Personal Trainer</li>
                     </ul>
-                    <div class="btn-one-outer"><a href="#" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
+                    <div class="btn-one-outer"><a href="register.html" class="theme-btn btn-style-one" type="submit"><span class="txt">Select Now</span></a></div>
                 </div>
             </div>
             
@@ -286,6 +2505,7 @@
 </section>
 <!-- End Pricing Section -->
 
+{% endif %}
 <!-- News Section -->
 <section class="news-section-two">
     <div class="auto-container">
@@ -300,17 +2520,17 @@
             <div class="news-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'User/blog-single.html' %}"><img src="{% static 'User/images/resource/news-4.jpg' %}" alt="" /></a>
+                        <a href="blog-single.html"><img src="{% static 'User/images/resource/news-4.jpg' %}" alt="" /></a>
                     </div>
                     <div class="lower-content">
                         <ul class="post-meta">
                             <li><span class="icon fa fa-folder-open"></span> GYM</li>
                         </ul>
-                        <h4><a href="{% static 'User/blog-single.html' %}">AVOID INJURIES AND TRAIN PAIN FREE</a></h4>
+                        <h4><a href="blog-single.html">AVOID INJURIES AND TRAIN PAIN FREE</a></h4>
                         <div class="lower-box">
                             <div class="clearfix">
                                 <div class="pull-left">
-                                    <a class="comment" href="{% static 'User/blog-single.html' %}"><span class="icon fa fa-comment-o"></span> 02</a>
+                                    <a class="comment" href="blog-single.html"><span class="icon fa fa-comment-o"></span> 02</a>
                                 </div>
                                 <div class="pull-right">
                                     <div class="author-info">
@@ -330,17 +2550,17 @@
             <div class="news-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'User/blog-single.html' %}"><img src="{% static 'User/images/resource/news-5.jpg' %}" alt="" /></a>
+                        <a href="blog-single.html"><img src="{% static 'User/images/resource/news-5.jpg' %}" alt="" /></a>
                     </div>
                     <div class="lower-content">
                         <ul class="post-meta">
                             <li><span class="icon fa fa-folder-open"></span> Fitness</li>
                         </ul>
-                        <h4><a href="{% static 'User/blog-single.html' %}">IMPROVE YOUR TECHNIQUE, BODY MECHANICS, AND MUSCLE FUNCTION</a></h4>
+                        <h4><a href="blog-single.html">IMPROVE YOUR TECHNIQUE, BODY MECHANICS, AND MUSCLE FUNCTION</a></h4>
                         <div class="lower-box">
                             <div class="clearfix">
                                 <div class="pull-left">
-                                    <a class="comment" href="{% static 'User/blog-single.html' %}"><span class="icon fa fa-comment-o"></span> 02</a>
+                                    <a class="comment" href="blog-single.html"><span class="icon fa fa-comment-o"></span> 02</a>
                                 </div>
                                 <div class="pull-right">
                                     <div class="author-info">
@@ -360,17 +2580,17 @@
             <div class="news-block-two col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="{% static 'User/blog-single.html' %}"><img src="{% static 'User/images/resource/news-6.jpg' %}" alt="" /></a>
+                        <a href="blog-single.html"><img src="{% static 'User/images/resource/news-6.jpg' %}" alt="" /></a>
                     </div>
                     <div class="lower-content">
                         <ul class="post-meta">
                             <li><span class="icon fa fa-folder-open"></span> Cardio Burn</li>
                         </ul>
-                        <h4><a href="{% static 'User/blog-single.html' %}">Give your Fitness a Boost with our GYM Challenge</a></h4>
+                        <h4><a href="blog-single.html">Give your Fitness a Boost with our GYM Challenge</a></h4>
                         <div class="lower-box">
                             <div class="clearfix">
                                 <div class="pull-left">
-                                    <a class="comment" href="{% static 'User/blog-single.html' %}"><span class="icon fa fa-comment-o"></span> 02</a>
+                                    <a class="comment" href="blog-single.html"><span class="icon fa fa-comment-o"></span> 02</a>
                                 </div>
                                 <div class="pull-right">
                                     <div class="author-info">

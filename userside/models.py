@@ -84,8 +84,8 @@ class Payment_master(models.Model):
         return self.payment_id
 
 class Product_master(models.Model):
-    product_id = models.AutoField(primary_key=True)
-    product_name =  models.CharField(max_length=25,help_text="Must be of length less than 25")
+    product_id = models.AutoField(primary_key=True,)
+    product_name =  models.CharField(max_length=225,help_text="Must be of length less than 25")
     qty =  models.IntegerField(validators=[MaxValueValidator(99),MinValueValidator(1)],help_text="Quantity must be less than 100")
     details = models.TextField(help_text="Description of Product")
     price = models.IntegerField(help_text="Price Must Be Less than 99999",validators=[MaxValueValidator(99999),MinValueValidator(0)])
