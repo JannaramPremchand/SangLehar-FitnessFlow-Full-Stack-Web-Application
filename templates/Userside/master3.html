@@ -110,15 +110,13 @@
 										
 									
 								
+										{% if request.session.user_id %}
 										<li><a href="shop.html">shop</a></li>
+					
 										
-										
-									
-								
-										<li><a href="blog.html">Blog</a></li>
-										
-									
-								<li><a href="workout.html">My workout</a></li>
+					
+										<li><a href="workout.html">My workout</a></li>
+										{% endif %}
 								<li><a href="contact.html">Contact us</a></li>
 							</ul>
 						</div>
@@ -196,7 +194,7 @@
 
 									<div class="logo">
 
-                                    	<a href="index-2.html"><img src="{% static 'User/images/footer-logo.png' %}" alt="" /></a>
+                                    	<a href="index-2.html"><img src="{% static 'User/images/logo.png' %}" alt="" /></a>
 
                                     </div>
 
