@@ -92,5 +92,12 @@ urlpatterns = [
 
     path('workout_edit',views.workout_edit,name='workout_edit'),
 
+    path('termsAndConditions.html',views.termsAndConditions,name='termsAndConditions.html'),
+
+    path('privacyPolicy.html',views.privacyPolicy,name='privacyPolicy.html'),
+
+    path('cookiesAndData.html',views.cookiesAndData,name='cookiesAndData.html'),
+
+    path('complainsPolicy.html',views.complainsPolicy,name='complainsPolicy.html'),
     
 ]

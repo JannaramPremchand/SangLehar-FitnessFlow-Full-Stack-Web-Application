@@ -509,3 +509,21 @@ def viewfeedback(request):
     #return list(data)
     print(list(data))
     return render(request,'Userside/viewfeedback.html',{'mydata': data})
+
+
+
+# View for Terms and Conditions page
+def termsAndConditions(request):
+    return render(request, 'footerUsefulLinks/termsAndConditions.html')
+
+# View for Privacy Policy page
+def privacyPolicy(request):
+    return render(request, 'footerUsefulLinks/privacyPolicy.html')
+
+# View for Cookies and Data page
+def cookiesAndData(request):
+    return render(request, 'footerUsefulLinks/cookiesAndData.html')
+
+# View for Complains Policy page
+def complainsPolicy(request):
+    return render(request, 'footerUsefulLinks/complainsPolicy.html')
