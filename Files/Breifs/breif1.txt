@@ -1,0 +1,133 @@
+# SangLehar FitnessFlow: Gym Fitness Management System
+
+## Introduction
+The aim of creating this project is to bring every manual activity of the gym to an online platform. This digital transformation simplifies the gym staff's tasks, which were previously handled on paper, making them more efficient and organized. The website also benefits gym members by enabling them to track attendance, manage schedules, and perform other activities online. Additionally, guest users can apply for membership directly through the website. Trainers can monitor their attendance, track members' workout progress, and create workout schedules and diet charts for members.
+
+## Entities
+- **Admin**
+- **Trainer**
+- **Member**
+- **Guest**
+
+## Project Profile
+### Requirement Gathering
+#### **Admin:**
+The admin manages the entire website and has full access. Admin functionalities include:
+- Logging in
+- Adding, updating, and removing gym details
+- Managing members and trainers
+- Tracking attendance
+- Handling memberships
+- Selling gym products
+- Providing fitness blogs and videos
+- Managing payments
+- Generating reports
+
+#### **Member:**
+Members act as clients of the gym with access to various features, including:
+- Logging in
+- Managing their profile
+- Tracking attendance
+- Viewing training videos, workout schedules, and diet charts
+- Purchasing gym products
+- Managing membership payments
+- Providing feedback
+
+#### **Trainer:**
+Trainers function as gym employees with the ability to:
+- Log in
+- Manage their profile
+- Track attendance (both personal and members')
+- Manage members’ workout schedules and diet charts
+- Upload workout videos
+- Assign reward points based on performance
+
+#### **Guest:**
+Guests have limited access and can:
+- View the website
+- Apply for gym membership
+
+## **Existing System**
+- Customer data is stored manually (registers/MS Excel)
+- Attendance records are maintained in books
+- Payments are recorded manually
+- No automated gym management system
+
+## **Proposed System**
+- Trainers and members can track attendance remotely
+- Members receive personalized diet charts and workout schedules
+- Reward points system for achieving fitness targets
+- Members can watch trainer-uploaded workout videos for home exercises
+- Members can purchase gym products online
+
+## **Tools and Technologies Used**
+- **Frontend:** HTML5, CSS 2.1, JavaScript
+- **Backend:** MySQL 5.5
+- **Framework:** Django 3.1 (Python 3.8)
+- **Other Tools:** Microsoft PowerPoint 2019, EDraw Max 9.0, Microsoft Visio 2016, Microsoft Word 2019
+
+## **Data Dictionary**
+1. **User_Type**: Stores user type details (Member, Trainer, Admin).
+2. **User_Master**: Contains user details like name, email, gender, address, and phone.
+3. **Plan_Master**: Stores gym membership plan details.
+4. **Membership_Master**: Tracks member membership details.
+5. **Trainer_Details**: Contains additional trainer information.
+6. **Payment_Master**: Stores membership payment details.
+7. **Product_Master**: Holds gym product details.
+8. **Feedback_Master**: Stores feedback from members.
+9. **Workout_Master**: Tracks workout plans, diet charts, and rewards.
+10. **Order_Master**: Records product purchase orders.
+11. **Order_Details**: Provides order-specific information (products, quantity, price).
+12. **Attendance_Master**: Maintains attendance records for members and trainers.
+
+## **Modules Functionalities**
+### **Admin Side**
+- Admin login with validation
+- Change password functionality
+- Admin dashboard with navigation panel
+- Manage user types, users, trainers, and plans
+- Attendance management (add, view, track attendance)
+- Trainer details management
+- Payment management (approval, view transactions)
+- Product management (add, update, view, delete products)
+- Workout details management (add/view schedules, diet charts, videos)
+- Order tracking and status updates
+- View user feedback and ratings
+
+### **Trainer Side**
+- Trainer login and profile management
+- Change password functionality
+- Dashboard with attendance and workout management features
+- View and track personal and member attendance
+- Manage workout schedules, diet charts, and videos
+- Assign reward points to members
+
+### **Guest Side**
+- Home page with navigation
+- About Us, FAQs, Testimonials, and Contact Us pages
+- Membership application form with validation
+- Payment confirmation process with transaction details
+- Login and forgot password functionality
+
+### **User Side (Member)**
+- Dashboard displaying profile, membership, attendance, and logout options
+- Membership details and renewal options
+- Attendance tracking
+- Gym product shop with cart and checkout functionality
+- Order history and details
+- Access to personalized workout schedules, diet charts, and training videos
+- Blog section for fitness articles
+- Profile management (edit details, change password)
+- Logout functionality
+
+## **Reports and Analytics**
+- User reports filtered by type (members/trainers) and gender
+- Membership reports based on plan type, start date, and duration
+- Feedback reports filtered by gender and ratings
+- Product order reports based on product type and delivery status
+- Attendance reports filtered by user type (member/trainer) and date
+- Printable and PDF viewable reports for all records
+
+---
+This document provides a comprehensive overview of the **SangLehar FitnessFlow** project, detailing its features, functionalities, and technical specifications.
+
