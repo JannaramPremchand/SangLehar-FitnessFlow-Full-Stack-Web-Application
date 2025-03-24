@@ -149,4 +149,6 @@ urlpatterns = [
 
     path('ViewFeedback.html',views.ViewFeedback,name='ViewFeedback.html'),
 
+    path('reports.html',views.reports,name='reports.html'),
+
 ]

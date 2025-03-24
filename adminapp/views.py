@@ -12,18 +12,40 @@ conn = mcdb.connect(host="localhost", user="root", passwd="p@$$word_SQL", databa
 print('Successfully connected to database')
 cur = conn.cursor()
 
+
+from django.shortcuts import render, redirect
+
 def index(request):
     if 'admin_email' in request.COOKIES and request.session.has_key('admin_email'):
-        
-        admin_emails = request.session['admin_email']
-        admin_emailc = request.COOKIES['admin_email']
+        admin_email = request.session['admin_email']
 
-        print("Session is  " + str(admin_emails))
-        print("Cookie is  " + admin_emailc)
+        # Execute SQL Queries Using Your Existing Cursor
+        cur.execute("SELECT COUNT(*) FROM user_master")
+        total_users = cur.fetchone()[0]
 
-        return render(request,'Admin/index.html')
+        cur.execute("SELECT COUNT(*) FROM trainer_details")
+        total_trainers = cur.fetchone()[0]
+
+        cur.execute("SELECT COUNT(*) FROM order_master")
+        total_orders = cur.fetchone()[0]
+
+        cur.execute("SELECT COUNT(*) FROM feedback_master")
+        total_reviews = cur.fetchone()[0]
+
+        # Context for the Template
+        context = {
+            'total_users': total_users,
+            'total_trainers': total_trainers,
+            'total_orders': total_orders,
+            'total_reviews': total_reviews,
+            'total_visitors': 0,  # Implement tracking if needed
+            'admin_email': admin_email,
+        }
+
+        return render(request, 'Admin/index.html', context)
     else:
         return redirect(login)
+
 
 def forms(request):
     return render(request,'Admin/forms.html')
@@ -646,3 +668,6 @@ def ViewFeedback(request):
     #return list(data)
     print(list(data))
     return render(request,'Admin/ViewFeedback.html', {'mydata': data})
+
+def reports(request):
+    return render(request,'Admin/404.html')
