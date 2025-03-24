@@ -210,9 +210,6 @@ def Useraddprocess(request):
         img = request.FILES['photo'].name
         id_proof = request.FILES['id_proof'].name
         password = request.POST['password']
-        print("**************************************************************************************************************")
-        print(gender)
-        print("**************************************************************************************************************")
 
         try:
             photo = request.FILES['photo']
