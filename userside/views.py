@@ -238,6 +238,7 @@ def login(request):
         usertype = request.POST['type']
         cur.execute("select * from `user_master` where `Email` = '{}' and `Password` = '{}'".format(uemail,upassword))
         data = cur.fetchone()
+        print("Data",data)
         
         if data is not None:
 
@@ -251,6 +252,7 @@ def login(request):
                 print(db_email)
                 #Session Create Code
                 if usertype=="Trainer" and data[1]==2:
+                    print("Trainer")
                     request.session['user_id'] = db_id
                     request.session['user_email'] = db_email
                     request.session['user_name'] = db_name
